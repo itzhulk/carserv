@@ -76,22 +76,16 @@
 
 
     $(document).ready(function () {
-        // Initialize the date and time pickers
         var datepicker = $('.date').datetimepicker({
             format: 'L',
             minDate: moment(),
         });
     
-        var timepicker = $('.time').datetimepicker({
-            format: 'LT',
-            minDate: moment(),
-        });
+        // var timepicker = $('.time').datetimepicker({
+        //     format: 'LT',
+        //     minDate: moment(),
+        // });
     
-    
-        // Handle input field focus to open the datepicker
-        $('.date input').on('focus', function () {
-            datepicker.data('DateTimePicker').show();
-        });
     
         // Handle input field clear to re-open the datepicker
         $('.date input').on('input', function () {
@@ -128,3 +122,4 @@
 
 })(jQuery);
 
+  
