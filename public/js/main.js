@@ -81,10 +81,6 @@
             minDate: moment(),
         });
     
-        // var timepicker = $('.time').datetimepicker({
-        //     format: 'LT',
-        //     minDate: moment(),
-        // });
     
     
         // Handle input field clear to re-open the datepicker

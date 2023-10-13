@@ -1,3 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+interiror
+
+https://i.pinimg.com/550x/2e/e4/ec/2ee4ec384d1c35eca06eb0865d739052.jpg
+
+exterior
+
+https://cdn.shopify.com/s/files/1/0255/5917/1117/files/BM-F80-M3-Style-Front-Bumper-To-Fit-BM-F30-3-Series-Max-Motorsport-1693919512207_large.jpg?v=1693920256
+
+DP1VXHqP01ULo6zk8MJXjhZhds92
