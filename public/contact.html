@@ -346,22 +346,32 @@
 
     <script>
         emailjs.init("xLBLwM4tCVrRPvXjm"); // Initialize Email.js with your user ID
-
+    
         document.getElementById("contact-form").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent the form from submitting normally
-
+            var subject = document.getElementById("subject").value;
+            var customer = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+            var reply_to = document.getElementById("email").value;
+    
             // Send the email using Email.js
-            emailjs.sendForm("service_necj32l", "template_j3sk7vq", this)
-                .then(function (response) {
-                    console.log("Email sent successfully!", response);
-                    alert("Message has been sent!"); // Display a success message
-                }, function (error) {
-                    console.log("Email could not be sent:", error);
-                    alert("Message could not be sent. Please try again later."); // Display an error message
-                });
+            emailjs.send("service_necj32l", "template_j3sk7vq", {
+                subject: subject,
+                customer: customer,
+                message: message,
+                reply_to: email
+            })
+            .then(function (response) {
+                console.log("Email sent successfully!", response);
+                alert("Message has been sent!");
+                document.getElementById("contact-form").reset();
+            }, function (error) {
+                console.log("Email could not be sent:", error);
+                alert("Message could not be sent. Please try again later.");
+            });
         });
-
     </script>
+    
 </body>
 
 </html>
